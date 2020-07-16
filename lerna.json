@@ -4,5 +4,10 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "registry": "https://pkgs.dev.azure.com/UWA-DEV/Global_Product_Strategy/_packaging/shared-web-components/npm/registry/"
+    }
+  }
 }
