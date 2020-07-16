@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -68,9 +68,9 @@
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0"
   },
-  "publishConfig":{
+  "publishConfig": {
     "access": "restricted",
-    "registry":"https://pkgs.dev.azure.com/UWA-DEV/Global_Product_Strategy/_packaging/shared-web-components/npm/registry/"
+    "registry": "https://pkgs.dev.azure.com/UWA-DEV/Global_Product_Strategy/_packaging/shared-web-components/npm/registry/"
   },
   "gitHead": "658a7896badb8ff313666fb95c2daa24a3525bf4"
 }
