@@ -1,0 +1,29 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import Header from '../src/Header';
+export const links = [ {icon: <div>1</div>, label: <div>One</div>, isVisible: true, to: '/'}];
+
+<Meta title="Header" component={<Header />} />
+
+# Header with Menu
+
+<Preview>
+  <Story name="default">
+      <Header links={ links }></Header>
+  </Story>
+</Preview>
+
+## Props
+
+| Name                | Required | Type               | Default value | Description |
+|---------------------|----------|--------------------|---------------|-------------|
+| **links**           | yes      | `IMainNavLink[]`   |  []           | Provides list of top menu items. Wrapping in `NavLink`  |
+| **rightSide**       | no       | `ReactNode`        |  undefined    | Render Node on right side of Header |
+| **logoDoubleClick** | no       | function           |  () => {}     | Callback for Logo double click |
+
+## Header with Right Side components
+
+<Preview>
+  <Story name="Passing components to right side">
+      <Header rightSide={<div>Logout</div>} />
+  </Story>
+</Preview>
